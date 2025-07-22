@@ -23,6 +23,9 @@
       font-size: 1.2em;
       max-width: 600px;
     }
+    .wp-live-chat {
+      display: none !important;
+    }
   </style>
 </head>
 <body>
@@ -30,39 +33,39 @@
     <h1>Bem-vindo ao Atendimento</h1>
     <p>Clique no botão de telefone no canto inferior direito para iniciar uma ligação com nossa equipe.</p>
   </div>
+  <call-us 
+    phonesystem-url="https://alca2c.my3cx.com.br" 
+    style="position:fixed; font-size:16px; line-height:17px; z-index:99999; right:20px; bottom:20px;" 
+    id="wp-live-chat-by-3CX" 
+    minimized="true" 
+    animation-style="noanimation" 
+    party="LiveChat154565" 
+    minimized-style="bubbleright" 
+    allow-call="true" 
+    allow-video="false" 
+    allow-chat="true" 
+    allow-soundnotifications="true" 
+    enable-mute="true" 
+    enable-onmobile="true" 
+    offline-enabled="true" 
+    enable="true" 
+    ignore-queueownership="false" 
+    authentication="off" 
+    show-operator-actual-name="false" 
+    aknowledge-received="false" 
+    gdpr-enabled="false" 
+    message-userinfo-format="none" 
+    message-dateformat="none" 
+    lang="browser" 
+    button-icon-type="call" 
+    start-call-button="true" 
+    greeting-visibility="none" 
+    greeting-offline-visibility="none" 
+    chat-delay="0" 
+    enable-direct-call="true" 
+    enable-ga="false" 
+  ></call-us>
 
-<call-us 
-  phonesystem-url="https://alca2c.my3cx.com.br" 
-  style="position:fixed; font-size:16px; line-height:17px; z-index:99999; right:20px; bottom:20px;" 
-  id="wp-live-chat-by-3CX" 
-  minimized="true" 
-  animation-style="noanimation" 
-  party="LiveChat154565" 
-  minimized-style="bubbleright" 
-  allow-call="true" 
-  allow-video="false" 
-  allow-chat="false" 
-  allow-soundnotifications="true" 
-  enable-mute="true" 
-  enable-onmobile="true" 
-  offline-enabled="true" 
-  enable="true" 
-  ignore-queueownership="false" 
-  authentication="off" 
-  show-operator-actual-name="false" 
-  aknowledge-received="false" 
-  gdpr-enabled="false" 
-  message-userinfo-format="none" 
-  message-dateformat="none" 
-  lang="browser" 
-  button-icon-type="call" 
-  start-call-button="true" 
-  greeting-visibility="none" 
-  greeting-offline-visibility="none" 
-  chat-delay="0" 
-  enable-direct-call="true" 
-  enable-ga="false" 
-></call-us>
-<script defer src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js" id="tcx-callus-js" charset="utf-8"></script>
+  <script defer src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js" id="tcx-callus-js" charset="utf-8"></script>
 </body>
 </html>
