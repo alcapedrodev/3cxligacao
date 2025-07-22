@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Atendimento por Ligação</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #007bff, #00c6ff);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2em;
+    }
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Bem-vindo ao Atendimento</h1>
+    <p>Clique no botão de telefone no canto inferior direito para iniciar uma ligação com nossa equipe.</p>
+  </div>
+
+  <!-- 3CX - Widget com apenas ligação ativada (sem chat) -->
+  <call-us 
+    phonesystem-url="https://alca2c.my3cx.com.br" 
+    style="position:fixed; font-size:16px; line-height:17px; z-index:99999; right:20px; bottom:20px;" 
+    id="wp-live-chat-by-3CX" 
+    minimized="true" 
+    animation-style="noanimation" 
+    party="LiveChat154565" 
+    minimized-style="bubbleright" 
+    allow-call="true" 
+    allow-video="false" 
+    allow-chat="false" 
+    allow-soundnotifications="true" 
+    enable-mute="true" 
+    enable-onmobile="true" 
+    offline-enabled="true" 
+    enable="true" 
+    ignore-queueownership="false" 
+    authentication="off" 
+    show-operator-actual-name="false" 
+    aknowledge-received="false" 
+    gdpr-enabled="false" 
+    message-userinfo-format="none" 
+    message-dateformat="none" 
+    lang="browser" 
+    button-icon-type="phone" 
+    greeting-visibility="none" 
+    greeting-offline-visibility="none" 
+    chat-delay="0" 
+    enable-direct-call="true" 
+    enable-ga="false" 
+  ></call-us>
+
+  <script defer src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js" id="tcx-callus-js" charset="utf-8"></script>
+</body>
+</html>
