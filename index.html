@@ -23,7 +23,9 @@
       font-size: 1.2em;
       max-width: 600px;
     }
-    .wp-live-chat {
+
+    /* Ocultar o botão "Converse conosco" */
+    .tcx-cw-list-item.tcx-cw-list-item--chat {
       display: none !important;
     }
   </style>
@@ -33,6 +35,8 @@
     <h1>Bem-vindo ao Atendimento</h1>
     <p>Clique no botão de telefone no canto inferior direito para iniciar uma ligação com nossa equipe.</p>
   </div>
+
+  <!-- 3CX Widget: ligação ativada, chat visualmente oculto -->
   <call-us 
     phonesystem-url="https://alca2c.my3cx.com.br" 
     style="position:fixed; font-size:16px; line-height:17px; z-index:99999; right:20px; bottom:20px;" 
@@ -57,8 +61,7 @@
     message-userinfo-format="none" 
     message-dateformat="none" 
     lang="browser" 
-    button-icon-type="call" 
-    start-call-button="true" 
+    button-icon-type="default" 
     greeting-visibility="none" 
     greeting-offline-visibility="none" 
     chat-delay="0" 
